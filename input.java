@@ -5,17 +5,11 @@ public class input {
         System.out.println("Verificador da Cor do CD!");
         System.out.println();
         System.out.print("Insira a cor do CD desejado: ");
-        String cd = sc.nextline();
-        if (cd.equal("Azul")){
+        String cd = sc.nextLine();
+        if (cd.equals("Azul")){
             System.out.println("Esse CD custa R$10,00!");
-        } else{
-            if ()
+        } 
         }
-        }
-       
-    
-        
-
 }
 
     
