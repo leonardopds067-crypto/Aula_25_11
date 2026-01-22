@@ -4,5 +4,6 @@ public class vetores {
          Scanner scanner = new Scanner(System.in);
 
          System.out.println("Quantidade");
+         int quantidade = Integer.parseInt(scanner.nextLine());
      }
 }
