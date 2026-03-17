@@ -19,17 +19,22 @@ public class Atividadedia27 {
         } else {
             return "obesidade";
         }
-
     }
 
     // inserir peso e altura
     public static void main(String[] args) {
         Scanner entradaDados = new Scanner(System.in);
-        System.out.println(" Digite peso e altura");
-        entradaDados.nextLine();
-        int pesoealtura = entradaDados.nextInt();
-
-        // Declarar Variaveis
+        System.out.println("Digite o peso (kg):");
+        double peso = entradaDados.nextDouble();
+        
+        System.out.println("Digite a altura (m):");
+        double altura = entradaDados.nextDouble();
+        
+        double imc = calcularIMC(peso, altura);
+        String classificacao = classificacarIMC(imc);
+        
+        System.out.printf("IMC: %.2f - %s%n", imc, classificacao);
+        
+        entradaDados.close();
     }
-
 }
